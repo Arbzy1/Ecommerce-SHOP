@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winston | Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+
+<div class="container"></div>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/Adidas_Logo.svg.png" width="200px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html">
+            <img src="images/cart.png" width="30px" height="30px">
+            </a>
+    </div>
+</div>
+</div>
+
+
+
+<!------------------------------------ single products details ------------------------------------>
+    
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/mainproduct.jpg" width="80%" id="productimg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/kid1.avif" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/d3ad4cc2c3324762b4ebaf4100e54309_9366.webp" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/city escape 1.webp" width="100%" class="small-img">
+                    </div>
+                </div>
+
+              
+
+
+            </div>
+            <div class="col-2">
+                <p> Home / T-Shirt</p>
+                <h1> Adidas Red T-Shirt</h1>
+                <h4>49.99</h4>
+                <select name="" id="">
+                    <option value="">Select Size</option>
+                    <option value="">Small</option>
+                    <option value="">Medium</option>
+                    <option value="">Large</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+                <h3>Product Details <i class="fa-solid fa-star"></i></h3>
+                <br>
+                <p>A stylish red t shirt for all your summer needs. Created with high quality cotton, the t shirt will not shrink in the wash</p>
+            </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            
+        </div>
+    </div>
+
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/mainproduct.jpg">
+                <h4> Adidas Red T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>£49.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/socks.webp">
+                <h4> Adidas Mid Cut Crew Socks 3 Pack White</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>£9.99</p>
+        </div>
+        <div class="col-4">
+            <img src="images/stansmiths.webp">
+            <h4> Adidas Original Stan Smith Trainers in White</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>£38.99</p>
+    </div>
+    <div class="col-4">
+        <img src="images/tracksuit.webp">
+        <h4> Adidas Original Blue Tracksuit</h4>
+        <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>£43.99</p>
+    </div>
+
+
+    
+<!------------------------------------ latest products ------------------------------------>
+
+</div>
+
+
+<script>
+    var MenuItems = document.getElementById("MenuItems")
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+
+<script>
+  var productimg = document.getElementById("productimg");
+  var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+        productimg.src = smallimg[0].src;
+    
+    smallimg[1].onclick = function(){
+        productimg.src = smallimg[1].src;
+
+    smallimg[2].onclick = function(){
+        productimg.src = smallimg[2].src;
+    
+    smallimg[3].onclick = function(){
+        productimg.src = smallimg[3].src;
+    }
+</script>
+    }
+
+<!------------------------------------ offer ------------------------------------>
+   
+</body>
+</html>
